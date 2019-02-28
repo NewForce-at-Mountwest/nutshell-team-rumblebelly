@@ -1,5 +1,6 @@
 import apiMess from "./apiMess";
 import buildMessObj from "./buildMessObj";
+import printAllMess from "./printMess";
 
 const sendtheMess = () => {
 document.querySelector("#messageText").addEventListener("keyup", function(event){
@@ -12,6 +13,7 @@ document.querySelector("#messageText").addEventListener("keyup", function(event)
         apiMess.postNewMess(messToPost)
         .then(() => {
             apiMess.getAllMess();
+            printAllMess();
 
 
             document.querySelector("#messageText").value = "";
