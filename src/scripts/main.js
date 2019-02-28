@@ -1,7 +1,7 @@
-import EVformBuilder from "./EVformBuilder"
-import APIManager from "./EVeventsAPIManager"
-import EventPrinter from "./eventList"
-import EVbuttonBuilder from "./EVbuttonBuilder"
+import EVformBuilder from "./EVENTS/EVformBuilder"
+import APIManager from "./EVENTS/EVeventsAPIManager"
+import EventPrinter from "./EVENTS/eventList"
+import EVbuttonBuilder from "./EVENTS/EVbuttonBuilder"
 
 EVformBuilder.buildEventForm()
 APIManager.getAllEvents()
