@@ -2,7 +2,7 @@ import task from "./tasks";
 import retrieval from "./tasksApiManager";
 
 const taskList = () => {
-    document.querySelector("#tasksContainer").innerHTML="";
+    document.querySelector("#tasksContainer").innerHTML +="";
     retrieval.retrieveAllTasks()
     .then(tasks =>{
         tasks.forEach(singleContact => {

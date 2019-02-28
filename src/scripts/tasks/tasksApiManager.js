@@ -9,8 +9,9 @@ const apiRetrieve = {
         });
     },
     // Why is the parenthesis blank when retrieving all of an object.
-    retrieveAllTasks: () =>{ sessionStorage.getItem("userId");
-    return fetch(`http://localhost:8088/tasks?userId=${activeUserId}`)
+    retrieveAllTasks: () =>{
+    return fetch("http://localhost:8088/tasks")
+    // add this back once you have sign in integrated  to retrieveAllTasks  sessionStorage.getItem("userId"); ?userId=${activeUserId}
     .then (r =>r.json());
     },
     deleteSingleTask: (taskId) => {
