@@ -3,7 +3,7 @@ import buildSingleMessage from "./messComponent";
 const apiMess = {
   //function to get all messages:
   getAllMess: () => {
-    return fetch("http://localhost:8088/messages?_expand=user")
+    return fetch("http://localhost:8088/messages")
     .then(allMessages => allMessages.json());
   },
 
