@@ -11,10 +11,12 @@ import printAllMess from "./messages/printMess.js";
 
 
 document.querySelector("#tasksFormContainer").innerHTML += buildForm();
-
-activateSaveButton();
-
 taskList();
+activateSaveButton();
+activateEditButton();
+activateDeleteButton();
+
+
 
     // activateDeleteButton();
 

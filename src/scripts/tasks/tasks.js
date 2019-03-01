@@ -6,6 +6,8 @@ const task = (singleTaskObj) => {
     <h3>${singleTaskObj.name}</h3>
     <p>${singleTaskObj.dueDate}</p>
     ${tasksButtons.editButton(singleTaskObj.id)}
+    ${tasksButtons.deleteButton(singleTaskObj.id)}
+
     </div>`
  }
 

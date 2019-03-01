@@ -2,9 +2,9 @@ import apiRetrieve from "./tasksApiManager";
 import editedTask from "./tasksSaveEdit";
 
 const activateEdit = () => {
+    editedTask();
     document.querySelector("#tasksContainer").addEventListener("click", () => {
         if(event.target.classList.contains("edit")){
-            console.log("You clicked edit!");
             apiRetrieve.retrieveSingleTask(event.target.id.split("-")[2])
             .then ((singleTask) =>{
                 document.querySelector("#task-name").value = singleTask.name;
@@ -13,9 +13,10 @@ const activateEdit = () => {
                 document.querySelector("#save-task").textContent = "Edit Task";
                 document.querySelector("#save-task").id = `edit-task-${singleTask.id}`;
 
-                editedTask();
+
 
             })
+            document.querySelector("#newEditHeader").innerHTML = ("Edit your task here!")
         }
     })
 }
