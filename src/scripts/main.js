@@ -3,13 +3,13 @@ import buildForm from "./tasks/tasksForm";
 import activateDeleteButton from "./tasks/tasksDeleteActivation";
 import activateEditButton from "./tasks/tasksEditActivation";
 import activateSaveButton from "./tasks/tasksSaveActivation";
-import EVformBuilder from "./EVformBuilder";
-import APIManager from "./EVeventsAPIManager";
-import EventPrinter from "./eventList";
-import EVbuttonBuilder from "./EVbuttonBuilder";
+import EVformBuilder from "./EVENTS/EVformBuilder";
+import APIManager from "./EVENTS/EVeventsAPIManager";
+import EventPrinter from "./EVENTS/eventList";
+import EVbuttonBuilder from "./EVENTS/EVbuttonBuilder";
 
 
-document.querySelector("#tasksContainer").innerHTML += buildForm();
+document.querySelector("#tasksFormContainer").innerHTML += buildForm();
 
 activateSaveButton();
 

@@ -16,7 +16,7 @@ const editedTask = () => {
             apiRetrieve.editSingleTask(taskId, objectToPost)
             .then (()=> {
                 taskList();
-                document.querySelector("#tasksContainer").innerHTML = tasksForm();
+                document.querySelector("#tasksFormContainer").innerHTML = tasksForm();
             });
 
         }
