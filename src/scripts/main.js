@@ -6,4 +6,4 @@ import EVbuttonBuilder from "./EVENTS/EVbuttonBuilder"
 EVformBuilder.buildEventForm()
 APIManager.getAllEvents()
 EventPrinter()
-EVbuttonBuilder.buildButton.activateEditButton()
+EVbuttonBuilder.activateEditButton()
