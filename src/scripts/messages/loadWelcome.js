@@ -1,6 +1,7 @@
+import renderWelcomeScreen from "./renderWelcome";
 
-// const loadWelcome = () => {
-//     document.querySelector("body").innerHTML = renderWelcomeScreen();
-// }
+const loadWelcome = () => {
+    document.querySelector("body").innerHTML = renderWelcomeScreen();
+}
 
-// export default loadWelcome;
+export default loadWelcome;
