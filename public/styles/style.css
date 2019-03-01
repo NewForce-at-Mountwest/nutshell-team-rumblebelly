@@ -1,0 +1,19 @@
+#messagesContainer {
+
+    overflow: hidden;
+}
+
+#upperMess {
+    max-height: 200px;
+    max-width: 45vw;
+    border: 2px solid black;
+    overflow-y: scroll;
+    background-color: #a8c3d6
+}
+
+
+#messageText {
+    max-height: 25px;
+    background-color: #5d5c61;
+    color: whitesmoke;
+}

@@ -1,4 +1,4 @@
-import renderWelcomeScreen from "./messages/test";
+import renderWelcomeScreen from "./renderWelcome";
 
 const loadWelcome = () => {
     document.querySelector("body").innerHTML = renderWelcomeScreen();
