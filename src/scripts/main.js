@@ -7,7 +7,7 @@ import EVformBuilder from "./EVENTS/EVformBuilder";
 import APIManager from "./EVENTS/EVeventsAPIManager";
 import EventPrinter from "./EVENTS/eventList";
 import EVbuttonBuilder from "./EVENTS/EVbuttonBuilder";
-
+import printAllMess from "./messages/printMess.js";
 
 document.querySelector("#tasksFormContainer").innerHTML += buildForm();
 
@@ -23,3 +23,5 @@ taskList();
 APIManager.getAllEvents();
 EventPrinter();
 EVbuttonBuilder.buildButton.activateEditButton();
+
+printAllMess();
