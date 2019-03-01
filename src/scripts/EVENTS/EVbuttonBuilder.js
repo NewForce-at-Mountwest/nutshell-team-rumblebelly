@@ -39,9 +39,10 @@ const buildButton = {
                         )
                 },
     activateEditButton: () => {
-        document.querySelector("#event-card").addEventListener("click",()=>{
-            if(event.target.id.includes("editEvent")){
-            console.log("PUT A HOLE IN THE BOX")
+        document.querySelector("#event-output").addEventListener("click",()=>{
+            if(event.target.classList.contains("edit")){
+            APIManager.getSingleEvent(event.target.id.split("-")[1])
+            console.log(event.target.id.split("-")[1])
             }
         })
     }
