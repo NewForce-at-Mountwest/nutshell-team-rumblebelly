@@ -15,12 +15,6 @@ import EVbuttonBuilder from "./EVENTS/EVbuttonBuilder"
 import printAllMess from "./messages/printMess.js";
 
 
-document.querySelector("#tasksFormContainer").innerHTML += buildForm();
-taskList();
-activateSaveButton();
-activateEditButton();
-activateDeleteButton();
-
 //-- @@@ EVENT CALLS
 EVformBuilder.buildEventForm()
 APIManager.getAllEvents()
